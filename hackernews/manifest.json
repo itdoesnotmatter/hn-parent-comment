@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "HN Parent Comments",
+  "description": "UX helper for HackerNews. Allows to display parent comment(s) in a fixed box on top of the page while hovering an entry.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+        "matches": ["https://news.ycombinator.com/item?*"],
+        "js": ["hn.js"]
+    }
+  ]
+}
